@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sharjeel`s Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: My-Portfolio
+  * Template URL: https://bootstrapmade.com/style-bootstrap-portfolio-template/
+  * Updated: Jul 02 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.webp" alt="">
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <h1
+                class="sitename">Sharjeel | Dev Portfolio
+        </h1>
+      </a>
+       <!-- Right side: Visitor Count -->
+    <div class="visitor-count" style="margin-left:auto;margin-right:90px; font-size:20px; font-weight:normal;">
+      No Of Visitors: {{ num }}
+    </div>
+
+      <nav id="navmenu" class="navmenu">
+
+        <div class="profile-img">
+          <img src="static/assets/img/profile/profile-circle.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Sharjeel Ahmed</h1>
+        </a>
+
+        <div class="social-links text-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/syed.sharjeel.ahmed.914955" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/sharjeelahmed95?igsh=cmd0NGU0NWk1bWk2" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/Sharjeel1906?tab=repositories" class="google-plus"><i class="bi bi-github"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+<!--          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--            <ul>-->
+<!--              <li><a href="#">Dropdown 1</a></li>-->
+<!--              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--                <ul>-->
+<!--                  <li><a href="#">Deep Dropdown 1</a></li>-->
+<!--                  <li><a href="#">Deep Dropdown 2</a></li>-->
+<!--                  <li><a href="#">Deep Dropdown 3</a></li>-->
+<!--                  <li><a href="#">Deep Dropdown 4</a></li>-->
+<!--                  <li><a href="#">Deep Dropdown 5</a></li>-->
+<!--                </ul>-->
+<!--              </li>-->
+<!--              <li><a href="#">Dropdown 2</a></li>-->
+<!--              <li><a href="#">Dropdown 3</a></li>-->
+<!--              <li><a href="#">Dropdown 4</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row g-0 align-items-center">
+
+          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+            <div class="content-wrapper">
+              <h1 class="hero-title">Creative <span class="typed" data-typed-items="Backend Developer, Programmer, Artist"></span></h1>
+              <p class="lead">Passionate about building fast, secure, and scalable server-side solutions. Skilled in APIs, databases, and backend frameworks, turning ideas into reliable, high-performance applications.</p>
+
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Number Of Clients</span>
+                </div>
+              </div>
+
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+              </div>
+
+              <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.facebook.com/syed.sharjeel.ahmed.914955"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Sharjeel1906?tab=repositories"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/sharjeelahmed95?igsh=cmd0NGU0NWk1bWk2"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <div class="floating-elements">
+                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
+                  <i class="bi bi-people"></i>
+                  <span>UX Design</span>
+                </div>
+                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="bi bi-layers"></i>
+                  <span>Flutter Development</span>
+                </div>
+                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="bi bi-lightning"></i>
+                  <span>Creative Ideas</span>
+                </div>
+              </div>
+              <img src="static/assets/img/profile/profile-sit.jpg" alt="Portfolio Hero" class="img-fluid hero-main-image">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>About</h2>
+        <p>Driven by curiosity and passion, I strive to create impactful software solutions that combine functionality, efficiency, and innovation.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <img src="static/assets/img/profile/profile-new.jpg" alt="Profile" class="img-fluid">
+              </div>
+              <div class="signature-section">
+                <img src="static/assets/img/misc/sign2.png" alt="Signature" class="signature">
+                <p class="quote">Building powerful backend solutions and innovative software through clean, efficient code.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="intro">
+                <h2>Hi, I'm Sharjeel – a Passionate Backend & Software Developer</h2>
+                <p>I am a 1st-year BSSE student at Karachi University with a strong passion for programming and technology. I have completed courses in Python, C++, and Java, along with Google’s AI Prompting Essentials. My skills include backend development for websites, Flutter widgets, web scraping, and automation. I also have experience with HTML and CSS. I have built the backend for projects like a blog website, Spotify automation, and more. Additionally, I am exploring data analysis to broaden my expertise. Always eager to learn and experiment, I strive to turn ideas into functional, impactful solutions.</p>
+              </div>
+
+              <div class="skills-grid">
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="skill-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h4>UX Design</h4>
+                  <p>Designing intuitive, user-friendly interfaces that enhance digital experiences.</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="skill-icon">
+                    <i class="bi bi-bar-chart-line"></i>
+                  </div>
+                  <h4>Backend Dev</h4>
+                  <p>Building secure, scalable, and efficient server-side solutions that power applications.</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="skill-icon">
+                    <i class="bi bi-server"></i>
+                  </div>
+                  <h4>Data Analysis</h4>
+                  <p>Turning raw data into meaningful insights for smarter decisions</p>
+                </div>
+              </div>
+
+              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-item">
+                  <div class="year">2022</div>
+                  <div class="description">Completed Matriculation in Science with 93.90% from The Citizens Foundation School</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2024</div>
+                  <div class="description">Completed Intermediate in Pre-Engineering with 82% from Government Delhi College.</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2025</div>
+                  <div class="description">Currently pursuing BS in Software Engineering at UBIT, University of Karachi.</div>
+                </div>
+              </div>
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="fun-fact">
+                  <span class="emoji"></span>
+                  <span class="text">100% programmer, 0% caffeine… runs purely on logic</span>
+                </div>
+                <div class="action-buttons">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#" class="btn btn-outline">Download Resume</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="skills-grid">
+              <div class="row g-4">
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-code-slash"></i>
+                      <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">HTML/CSS</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Bootstrap Usage</span>
+                          <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Flutter Widgets</span>
+                          <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Frontend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-server"></i>
+                      <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Python</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">java</span>
+                          <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">C++</span>
+                          <span class="skill-percentage">50%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Backend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-cpu"></i>
+                      <h3>Automation and Data</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Web Scraping</span>
+                          <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Automation</span>
+                          <span class="skill-percentage">77%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Data Analysis</span>
+                          <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Design Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-tools"></i>
+                      <h3>Tools and Platform</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Ai Prompting Essentials</span>
+                          <span class="skill-percentage">86%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Html/Css Backend Integration</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Git</span>
+                          <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End DevOps Card -->
+                </div>
+              </div>
+            </div><!-- End Skills Grid -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
+              <h3>Professional Expertise</h3>
+              <p>Skilled in Python as the primary programming language, with strong expertise in building efficient and scalable applications.
+Proficient in Java and familiar with C++ fundamentals, enabling flexibility across different technologies.
+Experienced in API integration, automation, and problem-solving with clean, maintainable code.
+Passionate about continuous learning and delivering innovative, user-focused solutions</p>
+
+              <div class="summary-stats">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="stat-circle">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Years Experience</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat-circle">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projects Completed</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat-circle">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Happy Clients</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
+                <h4>Certifications</h4>
+                <div class="badge-list">
+                  <div class="skill-badge">Udemy Certified: Python Programming</div>
+                  <div class="skill-badge">Udemy Certified: C++</div>
+                  <div class="skill-badge">Google Certified: AI Prompting Essentials</div>
+                  <div class="skill-badge">Google Certified: Data Analytics</div>
+                  <div class="skill-badge">DigiSkills Certified: Digital Literacy</div>
+                </div>
+              </div>
+            </div><!-- End Skills Summary -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+     <!-- Resume Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title">
+    <h2>Resume</h2>
+    <p>Aspiring Software Engineering Student with a passion for problem-solving and innovation.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <!-- Left Column: Professional Journey -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+        <div class="experience-section">
+          <div class="section-header">
+            <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
+            <p class="section-subtitle">Professional certifications in data analysis, automation platforms, and software development</p>
+          </div>
+
+          <div class="experience-cards">
+
+            <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card-header">
+                <div class="role-info">
+                  <h3>Python Programming</h3>
+                  <h4>From Udemy</h4>
+                </div>
+                <span class="duration">2024</span>
+              </div>
+              <div class="card-body">
+                <p>Familiar with backend development, web scraping, Flask integration, Selenium automation, and SQL database integration</p>
+                <ul class="achievements">
+                  <li>Backend development</li>
+                  <li>Web Scraping</li>
+                  <li>Flask integration</li>
+                  <li>Selenium Automation</li>
+                  <li>SQL Database Integration</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card-header">
+                <div class="role-info">
+                  <h3>C++ Programming</h3>
+                  <h4>From Udemy</h4>
+                </div>
+                <span class="duration">2025</span>
+              </div>
+              <div class="card-body">
+                <p>Familiar with C++ fundamentals such as syntax, variables, loops, conditional statements, and basic problem-solving.</p>
+              </div>
+            </div>
+
+            <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="card-header">
+                <div class="role-info">
+                  <h3>Data Analytics</h3>
+                  <h4>From Google</h4>
+                </div>
+                <span class="duration">2025</span>
+              </div>
+              <div class="card-body">
+                <p>Proficient in data collection, cleaning, visualization, and analysis using Google Data Analytics tools and techniques.</p>
+                <ul class="achievements">
+                  <li>Data collection and cleaning</li>
+                  <li>Data visualization with charts and dashboards</li>
+                  <li>Analyzing datasets to extract actionable insights</li>
+                  <li>Using spreadsheets and SQL for data manipulation</li>
+                  <li>Creating clear reports to support data-driven decisions</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="experience-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="card-header">
+                <div class="role-info">
+                  <h3>Prompting Essentials</h3>
+                  <h4>From Google</h4>
+                </div>
+                <span class="duration">2025</span>
+              </div>
+              <div class="card-body">
+                <p>Skilled in designing clear and effective prompts to optimize AI language model interactions and outputs.</p>
+                <ul class="achievements">
+                  <li>Prompt Engineering</li>
+                  <li>AI Interaction</li>
+                  <li>Problem Solving with AI</li>
+                  <li>Google AI Tools</li>
+                  <li>Critical Thinking</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Academic Excellence -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <div class="education-section">
+          <div class="section-header">
+            <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
+            <p class="section-subtitle">Consistently achieved high academic standards with recognized certifications and qualifications.</p>
+          </div>
+
+          <div class="education-timeline">
+            <div class="timeline-track"></div>
+
+            <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+              <div class="timeline-marker"></div>
+              <div class="education-content">
+                <div class="degree-header">
+                  <h3>Pursuing Bachelor of Science in Software Engineering (BSSE)</h3>
+                  <span class="year">2024 - 2028</span>
+                </div>
+                <h4 class="institution">University Of Karachi</h4>
+                <p>Second-semester BSSE student at Karachi University, building foundational skills in software engineering and programming.</p>
+              </div>
+            </div>
+
+            <div class="education-item" data-aos="slide-up" data-aos-delay="400">
+              <div class="timeline-marker"></div>
+              <div class="education-content">
+                <div class="degree-header">
+                  <h3>Intermediate In Pre-Engineering</h3>
+                  <span class="year">2022 - 2024</span>
+                </div>
+                <h4 class="institution">Govt Dehli College</h4>
+                <p>Completed Intermediate in Pre-Engineering with 82% marks, focusing on mathematics, physics, and chemistry fundamentals.</p>
+              </div>
+            </div>
+
+            <div class="education-item" data-aos="slide-up" data-aos-delay="500">
+              <div class="timeline-marker"></div>
+              <div class="education-content">
+                <div class="degree-header">
+                  <h3>Matriculation In Science</h3>
+                  <span class="year">2020 - 2022</span>
+                </div>
+                <h4 class="institution">The Citizen Foundation School</h4>
+                <p>Completed Matriculation in Science with 93.90% marks, excelling in core science subjects.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Services</h2>
+        <p>Offering expertise in Python automation, web scraping, backend development, and data analytics solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-stack"></i>
+              </div>
+              <h3>Custom Backend Development</h3>
+              <p>I develop scalable, secure server-side solutions for web applications, APIs, and database management. Using Python, Java, C++, Flask, and SQL, I design efficient backend systems, implement RESTful APIs, and optimize data handling for reliable performance. My focus is on building maintainable, high-performance services that support seamless user experiences and business growth.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h3>AI Solutions & Automation</h3>
+              <p>I build AI-powered chatbots using OpenAI and Gemini with custom prompts (Google AI Prompting Essentials certified). I create web scraping tools for data extraction and automate workflows with Python and Selenium. My projects include playlist generators, e-commerce monitors, and data collection systems that save time and provide valuable insights.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h3>Data Analysis & Visulization</h3>
+              <p>I clean, analyze, and visualize data to extract actionable insights using Python libraries such as Pandas, NumPy, and Matplotlib. By transforming raw data into meaningful information, I help identify trends, patterns, and anomalies that support informed decision-making. My approach includes data preprocessing, statistical analysis, and creating clear, impactful visualizations to communicate findings effectively.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3>Website And Blog Development</h3>
+              <p>I design and deploy static and dynamic websites, blogs, and CMS platforms tailored to your specific needs. From crafting responsive, user-friendly interfaces to implementing backend functionalities, I ensure seamless performance and easy content management. Whether building from scratch or customizing existing solutions, I focus on delivering engaging, scalable websites that align with your brand and goals.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 5 -->
+         <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-cloud-arrow-up"></i>
+              </div>
+              <h3>Cloud Services</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  Learn More
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>-->
+          <!-- End Service Item -->
+
+          <!-- Card 6 -->
+         <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>Process Automation</h3>
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  Learn More
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>-->
+          <!-- End Service Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Portfolio</h2>
+        <p>Explore my projects showcasing expertise in backend development, AI automation, database solutions, and web technologies – turning ideas into functional, efficient systems</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">
+              <i class="bi bi-grid-3x3"></i> All Projects
+            </li>
+            <li data-filter=".filter-ui">
+              Web Backend Development
+            </li>
+            <li data-filter=".filter-development">
+              Automation
+            </li>
+            <li data-filter=".filter-photography">
+              TkInter Apps(programs)
+            </li>
+            <li data-filter=".filter-marketing">
+              Data Analysis
+            </li>
+          </ul>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/blog.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">UX Design</div>
+                      <h3 class="entry-title">Blog Website</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/blog.png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Blog Website; description: Transforming ideas into engaging digital narratives with clean, responsive blog designs">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="portfolio-details.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/spotify.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Automation</div>
+                      <h3 class="entry-title">Spotify Automation</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/spotify.jpeg" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Spotify Automation Program; description: Automatically choose top 100 songs of the date you provide and make playlist in your spotify account">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{{ url_for('spotify') }}">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/password.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">TkInter Apps</div>
+                      <h3 class="entry-title">Password Manager App(Program)</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/password.png" class="glightbox" data-gallery="Password Manager App" data-glightbox="title: Manges Password; description: Generate safe password and save it accordingly with respect to its refral name ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{{ url_for('password') }}">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <!-- Ai and data analysis-->
+            <!--<div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Data Analysis</div>
+                      <h3 class="entry-title">Ai and data</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/portfolio-4.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="portfolio-details.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div>-->
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/cafe.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Ux Design</div>
+                      <h3 class="entry-title">Cafe & Wifi Website</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/cafe.png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Cafe and Wifi ; description: Streamlining café operations with seamless online ordering, WiFi management, and customer engagement tools.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="portfolio-details.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/auto-data.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Automation</div>
+                      <h3 class="entry-title">Automated Data Entry</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/auto-data.jpeg" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="Automated Data Entry; description: Automatically takes filtered data and then convert to spreadsheet by adding data in forms">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{{ url_for('automation') }}">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/quizzler.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">TkInter Apps(program)</div>
+                      <h3 class="entry-title">Quizzler App</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/quizzler.jpeg" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Quizzler App; description: Test knowledge with engaging quizzes—dynamic, interactive, and built for seamless learning.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{{ url_for('quizzler') }}">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+       <!-- Ai and Data Analysis -->
+          <!--    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="static/assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Marketing</div>
+                      <h3 class="entry-title">Brand Strategy</h3>
+                      <div class="entry-links">
+                        <a href="static/assets/img/portfolio/portfolio-5.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="portfolio-details.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div>-->
+            <!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Testimonials Section -->
+<!--    <section id="testimonials" class="testimonials section">-->
+<!--      &lt;!&ndash;Section Title &ndash;&gt;-->
+<!--      <div class="container section-title">-->
+<!--        <h2>Testimonials</h2>-->
+<!--        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
+
+<!--        <div class="row">-->
+<!--          <div class="col-12">-->
+<!--            <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">-->
+<!--              <div class="row">-->
+<!--                <div class="col-md-4">-->
+<!--                  <div class="critic-review">-->
+<!--                    <div class="review-quote">"</div>-->
+<!--                    <div class="stars">-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                    </div>-->
+<!--                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>-->
+<!--                    <div class="critic-info">-->
+<!--                      <div class="critic-name">The New York Times</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-4">-->
+<!--                  <div class="critic-review">-->
+<!--                    <div class="review-quote">"</div>-->
+<!--                    <div class="stars">-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-half"></i>-->
+<!--                    </div>-->
+<!--                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>-->
+<!--                    <div class="critic-info">-->
+<!--                      <div class="critic-name">Washington Post</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-4">-->
+<!--                  <div class="critic-review">-->
+<!--                    <div class="review-quote">"</div>-->
+<!--                    <div class="stars">-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                      <i class="bi bi-star-fill"></i>-->
+<!--                    </div>-->
+<!--                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>-->
+<!--                    <div class="critic-info">-->
+<!--                      <div class="critic-name">The Guardian</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="testimonials-container">-->
+<!--              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">-->
+<!--                <script type="application/json" class="swiper-config">-->
+<!--                  {-->
+<!--                    "loop": true,-->
+<!--                    "speed": 600,-->
+<!--                    "autoplay": {-->
+<!--                      "delay": 5000-->
+<!--                    },-->
+<!--                    "slidesPerView": 1,-->
+<!--                    "spaceBetween": 30,-->
+<!--                    "pagination": {-->
+<!--                      "el": ".swiper-pagination",-->
+<!--                      "type": "bullets",-->
+<!--                      "clickable": true-->
+<!--                    },-->
+<!--                    "breakpoints": {-->
+<!--                      "768": {-->
+<!--                        "slidesPerView": 2-->
+<!--                      },-->
+<!--                      "992": {-->
+<!--                        "slidesPerView": 3-->
+<!--                      }-->
+<!--                    }-->
+<!--                  }-->
+<!--                </script>-->
+
+<!--                <div class="swiper-wrapper">-->
+<!--                  <div class="swiper-slide">-->
+<!--                    <div class="testimonial-item">-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                      <p>-->
+<!--                        Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.-->
+<!--                      </p>-->
+<!--                      <div class="testimonial-profile">-->
+<!--                        <img src="static/assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">-->
+<!--                        <div>-->
+<!--                          <h3>Jane Smith</h3>-->
+<!--                          <h4>Book Enthusiast</h4>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+                  <!-- End testimonial item -->
+
+<!--                  <div class="swiper-slide">-->
+<!--                    <div class="testimonial-item">-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                      <p>-->
+<!--                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.-->
+<!--                      </p>-->
+<!--                      <div class="testimonial-profile">-->
+<!--                        <img src="static/assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">-->
+<!--                        <div>-->
+<!--                          <h3>Michael Johnson</h3>-->
+<!--                          <h4>Sci-Fi Blogger</h4>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--                  <div class="swiper-slide">-->
+<!--                    <div class="testimonial-item">-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-half"></i>-->
+<!--                      </div>-->
+<!--                      <p>-->
+<!--                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.-->
+<!--                      </p>-->
+<!--                      <div class="testimonial-profile">-->
+<!--                        <img src="static/assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">-->
+<!--                        <div>-->
+<!--                          <h3>Emily Davis</h3>-->
+<!--                          <h4>Book Club President</h4>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--                  <div class="swiper-slide">-->
+<!--                    <div class="testimonial-item">-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                        <i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                      <p>-->
+<!--                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur.-->
+<!--                      </p>-->
+<!--                      <div class="testimonial-profile">-->
+<!--                        <img src="static/assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">-->
+<!--                        <div>-->
+<!--                          <h3>Robert Wilson</h3>-->
+<!--                          <h4>Literary Reviewer</h4>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--                </div>-->
+<!--                <div class="swiper-pagination"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="row">-->
+<!--          <div class="col-12 text-center" data-aos="fade-up">-->
+<!--            <div class="overall-rating">-->
+<!--              <div class="rating-number">4.8</div>-->
+<!--              <div class="rating-stars">-->
+<!--                <i class="bi bi-star-fill"></i>-->
+<!--                <i class="bi bi-star-fill"></i>-->
+<!--                <i class="bi bi-star-fill"></i>-->
+<!--                <i class="bi bi-star-fill"></i>-->
+<!--                <i class="bi bi-star-half"></i>-->
+<!--              </div>-->
+<!--              <p>Based on 230+ reviews</p>-->
+<!--              <div class="rating-platforms">-->
+<!--                <span>Goodreads</span>-->
+<!--                <span>Amazon</span>-->
+<!--                <span>Barnes &amp; Noble</span>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; /Testimonials Section &ndash;&gt;-->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Which programming languages are you proficient in?</h3>
+                <div class="faq-content">
+                  <p>Python, Java and C++for backend development, along with HTML/CSS for frontend basics. I focus on clean, efficient code.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do you handle database management?</h3>
+                <div class="faq-content">
+                  <p>I design SQLite and relational databases for local/mobile apps, ensuring optimized queries and data integrity.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What’s your experience with AI tools?</h3>
+                <div class="faq-content">
+                  <p>Certified in Google AI Prompting Essentials—I build chatbots, automate workflows with Python, and scrape data using LLMs (OpenAI/Gemini).</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can you show examples of your backend projects?</h3>
+                <div class="faq-content">
+                  <p>Yes! My café management system (full-stack), Spotify automation tool, and blog CMS are available in my [Projects section].</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do you ensure code quality?</h3>
+                <div class="faq-content">
+                  <p>Modular architecture, documentation, and version control (Git). I follow best practices like DRY and SOLID principles.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What’s your next learning goal?</h3>
+                <div class="faq-content">
+                  <p>Mastering Flutter app deployment and diving deeper into cloud services (AWS/GCP) to scale my backend solutions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+               <div class="faq-item">
+                <h3>As a student developer, how do you ensure project reliability while still learning?</h3>
+                <div class="faq-content">
+                  <p>I build with testing in mind, document unknowns clearly, and fix issues proactively—with free revisions to ensure your project works perfectly. expect errors, plan for them, and resolve them fast—your satisfaction is guaranteed</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Contact Info</h3>
+              <p>Passionate student developer crafting solutions – let's build something great together!</p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Our Location</h4>
+                  <p>FB Area Block 18</p>
+                  <p>Karachi, Pakistan</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>03121198483</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>sharjeelahmed1906@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Get In Touch</h3>
+              <p>Let's collaborate and bring your ideas to life—whether you have a project in mind, want to discuss opportunities, or just chat about tech, I'd love to hear from you!</p>
+
+              <form action="{{ url_for('contact') }}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                   <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/syed.sharjeel.ahmed.914955"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/sharjeelahmed95?igsh=cmd0NGU0NWk1bWk2"><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="">Sharjeel Ahmed</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="static/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
