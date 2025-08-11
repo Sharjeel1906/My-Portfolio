@@ -1,13 +1,8 @@
 from flask import Flask,render_template,url_for,request
 from contact import send_response
-from serverless_wsgi import handle_request
 app = Flask(__name__)
 response  = send_response()
 form_link = " https://docs.google.com/forms/d/e/1FAIpQLSeF5QdXPA8h7_Sw11gHSY2d7XxDB3GaxSFOhxbBojUpSPTEng/viewform?usp=sharing&ouid=116599140460711299047"
-
-def handler(request, response):
-    return handle_request(app, request, response)
-
 def update_visitor_count():
     try:
         count = int(open("../visitor.txt").read()) + 1
