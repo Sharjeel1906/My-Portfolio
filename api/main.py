@@ -1,16 +1,17 @@
 from flask import Flask,render_template,url_for,request
 from contact import send_response
+from serverless_http import handle
 app = Flask(__name__)
-
+handler = handle(app)
 response  = send_response()
 form_link = " https://docs.google.com/forms/d/e/1FAIpQLSeF5QdXPA8h7_Sw11gHSY2d7XxDB3GaxSFOhxbBojUpSPTEng/viewform?usp=sharing&ouid=116599140460711299047"
 
 def update_visitor_count():
     try:
-        count = int(open("visitor.txt").read())+1
+        count = int(open("../visitor.txt").read()) + 1
     except(FileNotFoundError,ValueError):
         count=1
-    with open("visitor.txt","w") as f:
+    with open("../visitor.txt", "w") as f:
         f.write(str(count))
     return count
 
