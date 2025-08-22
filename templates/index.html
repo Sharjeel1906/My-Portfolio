@@ -51,7 +51,7 @@
       </a>
        <!-- Right side: Visitor Count -->
     <div class="visitor-count" style="margin-left:auto;margin-right:90px; font-size:20px; font-weight:normal;">
-      No Of Visitors: {{ num }}
+      Visitors: {{ num }}
     </div>
 
       <nav id="navmenu" class="navmenu">
@@ -707,21 +707,8 @@ Passionate about continuous learning and delivering innovative, user-focused sol
           </div><!-- End Service Item -->
 
           <!-- Card 5 -->
-         <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-cloud-arrow-up"></i>
-              </div>
-              <h3>Cloud Services</h3>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>-->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"> <div class="service-item"> <div class="icon"> <i class="bi bi-phone"></i> </div> <h3>Flutter development</h3> <p>I offer Flutter development with AI integration, creating powerful cross-platform apps for Android and iOS. I integrate advanced AI features such as chatbots, image recognition, predictive analytics, and natural language processing. Using AI-powered tools, I enhance development with faster delivery, smarter coding, and higher-quality results. I also specialize in custom API development and AI model integration with OpenAI, Google AI, Cursor, DeepSeek, and HuggingFace, building apps optimized for performance, security, and scalability.</p> </div> </div>
+
           <!-- End Service Item -->
 
           <!-- Card 6 -->
@@ -774,7 +761,7 @@ Passionate about continuous learning and delivering innovative, user-focused sol
               TkInter Apps(programs)
             </li>
             <li data-filter=".filter-marketing">
-              Data Analysis
+              Flutter Apps
             </li>
           </ul>
 
@@ -792,7 +779,7 @@ Passionate about continuous learning and delivering innovative, user-focused sol
                         <a href="static/assets/img/portfolio/blog.png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Blog Website; description: Transforming ideas into engaging digital narratives with clean, responsive blog designs">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        <a href="portfolio-details.html">
+                        <a href="http://SharjeelAhmed20.pythonanywhere.com">
                           <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
@@ -848,19 +835,19 @@ Passionate about continuous learning and delivering innovative, user-focused sol
             <!-- End Portfolio Item -->
 
             <!-- Ai and data analysis-->
-            <!--<div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="static/assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="static/assets/img/portfolio/stacky.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Data Analysis</div>
-                      <h3 class="entry-title">Ai and data</h3>
+                      <div class="entry-meta">Flutter Apps</div>
+                      <h3 class="entry-title">Stacky Trends</h3>
                       <div class="entry-links">
-                        <a href="static/assets/img/portfolio/portfolio-4.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
+                        <a href="static/assets/img/portfolio/stacky.png" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Stacky Trends; description: Top Trending Questions Of Stack Overflow">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        <a href="portfolio-details.html">
+                        <a href="{{ url_for('stacky_trend') }}">
                           <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
@@ -868,7 +855,7 @@ Passionate about continuous learning and delivering innovative, user-focused sol
                   </div>
                 </figure>
               </article>
-            </div>-->
+            </div>
             <!-- End Portfolio Item -->
 
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
@@ -896,13 +883,13 @@ Passionate about continuous learning and delivering innovative, user-focused sol
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="static/assets/img/portfolio/auto-data.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <img src="static/assets/img/portfolio/img.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
                       <div class="entry-meta">Automation</div>
                       <h3 class="entry-title">Automated Data Entry</h3>
                       <div class="entry-links">
-                        <a href="static/assets/img/portfolio/auto-data.jpeg" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="Automated Data Entry; description: Automatically takes filtered data and then convert to spreadsheet by adding data in forms">
+                        <a href="static/assets/img/portfolio/img.png" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="Automated Data Entry; description: Automatically takes filtered data and then convert to spreadsheet by adding data in forms">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="{{ url_for('automation') }}">
@@ -937,19 +924,19 @@ Passionate about continuous learning and delivering innovative, user-focused sol
               </article>
             </div><!-- End Portfolio Item -->
        <!-- Ai and Data Analysis -->
-          <!--    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="static/assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="static/assets/img/portfolio/describer.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Brand Strategy</h3>
+                      <div class="entry-meta">Flutter Apps</div>
+                      <h3 class="entry-title">Image Description</h3>
                       <div class="entry-links">
-                        <a href="static/assets/img/portfolio/portfolio-5.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
+                        <a href="static/assets/img/portfolio/describer.png" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Image Description; description: Give description of every image with a feature of login and sign up">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        <a href="portfolio-details.html">
+                        <a href="{{ url_for('image_desc') }}">
                           <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
@@ -957,7 +944,7 @@ Passionate about continuous learning and delivering innovative, user-focused sol
                   </div>
                 </figure>
               </article>
-            </div>-->
+            </div>
             <!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
@@ -1339,12 +1326,13 @@ Passionate about continuous learning and delivering innovative, user-focused sol
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                   <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+  <div class="loading">Loading</div>
+  <div class="error-message"></div>
+  <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
+  <button type="submit" class="btn">Send Message</button>
+</div>
+
 
                 </div>
               </form>
