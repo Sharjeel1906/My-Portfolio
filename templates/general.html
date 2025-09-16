@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title or "Video Page" }}</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #003366;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background: linear-gradient(135deg, #003366, #004b99);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      cursor: default;
+      border-bottom: 4px solid #3c9eff;
+    }
+
+    nav span {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 1.5px;
+      animation: glowEffect 2s ease-out;
+    }
+
+    @keyframes glowEffect {
+      0% { opacity: 0; letter-spacing: 1.5px; }
+      75% {
+        letter-spacing: 7.2px;
+        text-shadow: 0 0 3px #fff, 0 0 30px #0055cc, 0 0 30px #257af0;
+        scale: 1.1;
+      }
+      100% { opacity: 1; letter-spacing: 1.5px; }
+    }
+
+    video {
+      height: 80vh;
+      width: 70vw;
+      margin-top: 30px;
+      border: 5px solid #003366;
+      border-radius: 12px;
+      background-color: black;
+      box-shadow: 0px 0px 30px rgba(0, 51, 102, 0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+    video:hover {
+      transform: scale(1.02);
+      border-color: #004b99;
+      box-shadow: 0px 0px 20px rgba(1, 29, 87, 0.921);
+    }
+
+    @media (max-width: 1024px) {
+      video { width: 80vw; height: auto; }
+    }
+    @media (max-width: 768px) {
+      nav span { font-size: 1.5rem; }
+      nav { height: 60px; }
+      body { padding-top: 65px; }
+      video { width: 85vw; height: auto; }
+    }
+    @media (max-width: 480px) {
+      nav span { font-size: 1.2rem; }
+      nav { height: 55px; }
+      body { padding-top: 60px; }
+      video { width: 95vw; height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <nav><span>🎥 {{ title or "Project Video" }}</span></nav>
+
+  <video src="{{ url_for('static', filename='assets/videos/' ~ video) }}"
+         controls muted playsinline autoplay>
+  </video>
+</body>
+</html>
