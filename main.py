@@ -44,11 +44,13 @@ def contact():
 def project(name):
     projects = {
         "data_entry": {"title": "Automated Data Entry", "video": "automated data entry.mp4"},
-        "spotify": {"title": "Spotify Automation", "video": "spotify.mp4"},
-        "text_description": {"title": "Text Description", "video": "text_description.mp4"},
-        "stacky_trend": {"title": "Text Description", "video": "stacky_trend.mp4"},
-        "quizzler": {"title": "Quizler", "video": "quizzler.mp4"},
+        "text_description": {"title": "Image Description", "video": "text_description.mp4"},
+        "stacky_trend": {"title": "Stacky Trend", "video": "stacky_trend.mp4"},
+        "quizzler": {"title": "Quizler App", "video": "quizzler.mp4"},
         "ecommerce": {"title": "Ecommerce App", "video": "ecommerce.mp4"},
+        "movie_info":{"title":"Movie Info App","video":"movie_info.mp4"},
+        "ai_chat_app":{"title":"AI Chat App","video":"ai_chat_app.mp4"},
+        "billspot":{"title":"BillSpot","video":"billspot.mp4"}
     }
     project = projects.get(name)
     if not project:
